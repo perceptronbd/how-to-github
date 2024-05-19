@@ -52,6 +52,118 @@ Then, create a new branch as outlined in Step 3.
 - In case of spikes (small changes that do not have an issue), create a branch with the naming convention of `[feature/change]-spike`.
   - For example: if the user feature requires some minor changes and does not require an issue then the branch name should be `user-feature-spike`
 
+# VSCode Extension Setup
+
+### Setup Workspace
+- Create a .vscode in your workspace/root directory of the file you are working on.
+- Create a settings.json and paste this setting
+   ```json
+   {
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnType": false, 
+  "editor.formatOnPaste": true, 
+  "editor.formatOnSave": true, 
+  "editor.formatOnSaveMode": "file",
+  "files.autoSave": "onFocusChange",
+  "vs-code-prettier-eslint.prettierLast": false, 
+   "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.fixAll.eslint": "explicit"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+   "todo-tree.general.showActivityBarBadge": true,
+	"todo-tree.general.tags": [
+		"NOTE",
+		"TODO",
+		"FIX",
+		"MARK",
+		"BUG",
+		"DOC",
+		"[ ]",
+		"[x]"
+	],
+	"todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+	"todo-tree.general.statusBar": "tags",
+	"todo-tree.highlights.defaultHighlight": {
+		"type": "tag",
+		"fontWeight": "bold",
+		"foreground": "#d8d8d8",
+		"opacity": 90
+	},
+	"todo-tree.highlights.customHighlight": {
+		"TODO": {
+			"icon": "checkbox",
+			"type": "line",
+			"background": "#65B741",
+			"iconColour": "#65B741",
+			"gutterIcon": true,
+			"opacity": 0.5
+		},
+		"FIX": {
+			"icon": "alert",
+			"type": "line",
+			"background": "#ffbb00",
+			"iconColour": "#ffbb00",
+			"gutterIcon": true,
+			"opacity": 0.3
+		},
+		"DOC": {
+			"icon": "book",
+			"type": "line",
+			"background": "#c8f1ff",
+			"iconColour": "#c8f1ff",
+			"gutterIcon": true,
+			"opacity": 0.3
+		},
+		"NOTE": {
+			"icon": "note",
+			"type": "line",
+			"background": "#00BFFF",
+			"iconColour": "#00BFFF",
+			"gutterIcon": true,
+			"opacity": 0.3
+		},
+		"MARK": {
+			"background": "#157EFB",
+			"iconColour": "#157EFB",
+			"gutterIcon": true,
+			"opacity": 0.3,
+			"type": "line",
+			"icon": "tag"
+		},
+		"BUG": {
+			"icon": "bug",
+			"type": "line",
+			"background": "#FE0000",
+			"iconColour": "#FE0000",
+			"gutterIcon": true,
+			"opacity": 0.3
+		},
+		"[ ]": {
+			"icon": "issue-draft"
+		},
+		"[x]": {
+			"icon": "issue-closed"
+		}
+	  }
+   }
+   ```
+   look into the repository for the setup.
+
+### Install the Extensions
+Install these two extensions: </br>
+![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/ad54fdaa-1845-4cb7-a725-0738569b57d5)
+![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/386283e9-94c0-44bb-9946-2a138fb17dd4)
+
+- **Prettier ESLint** extensions will format the code.
+- **Todo Tree** extension will highlight the notes, docs, bugs, marks, etc.
+#### How to use Todo Tree
+Just start the comment with `NOTE:`, `DOC:`, `FIX:` etc to highlight the code or comment. ![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/915ef0d4-62bb-4484-8f31-60de6413f57e) </br>
+On the sidebar of the VSCode, open the extension to view the lists of the highlighted notes </br> ![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/7d3aa54f-3e66-4fbc-be5b-c75747f45806)
+
+
 Please adhere to these guidelines to maintain a well-organized and efficient collaboration workflow within our GitHub repositories.
 
 `Happy Hacking!`
