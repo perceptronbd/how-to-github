@@ -14,23 +14,23 @@ git clone [repository-url]
 Review the issues, project board, or issue tracker (Jira) to identify the issue assigned to you.
 
 ### 3. Branch Creation
-Create a new branch for the issue you'll be working on, following the branch naming convention: `B-[issue_number]` <br />
-Example: If your assigned issue is `#45`, create a branch named  `B-45` <br />
+Create a new branch for the issue you'll be working on, following the branch naming convention: `b-[issue_title]` <br />
+Example: If your assigned issue title is `admin feature`, create a branch named  `b-admin-feature` <br />
 Here is a step-by-step example:
 1. View the issue and click on **“Create a branch”** under the Development section.![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/065afa47-648d-4d15-8e2f-57a972351ee1)
-2. Change the branch name to `B-[issue_number]` in this case, `B-1` since the issue number is #1.![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/72811ce4-9d43-416b-af60-31ca21463d1e)
+2. Change the branch name to `b-[issue_title]` in this case, `B-demo-issue` since the issue number is #1.![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/72811ce4-9d43-416b-af60-31ca21463d1e)
 3. Click on “change branch source” and select the required branch, in this case, “Development”, and click “Create branch”. (make sure to have the checkout locally option checked).
 4. And finally, run these commands in your local repo.
    ```
    git fetch origin
-   git checkout B-1
+   git checkout B-demo-issue
    ```				
 
 ### 4. Commit and Push Changes
 - Commit your changes with a clear and descriptive commit message.
 - Push your branch to the remote repository:
  ```
-  git push origin B-[issue_number]
+  git push origin B-[issue_title]
  ```
 **Tip:** Commit every change for better history readability.
 
