@@ -18,19 +18,19 @@ Create a new branch for the issue you'll be working on, following the branch nam
 Example: If your assigned issue title is `admin feature`, create a branch named  `b-admin-feature` <br />
 Here is a step-by-step example:
 1. View the issue and click on **“Create a branch”** under the Development section.![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/065afa47-648d-4d15-8e2f-57a972351ee1)
-2. Change the branch name to `b-[issue_title]` in this case, `B-demo-issue` since the issue number is #1.![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/72811ce4-9d43-416b-af60-31ca21463d1e)
+2. Change the branch name to `[issue_number]-[issue_title]` in this case, `1-demo-issue` since the issue number is #1.![image](https://github.com/perceptronbd/how-to-guide/assets/53243993/72811ce4-9d43-416b-af60-31ca21463d1e)
 3. Click on “change branch source” and select the required branch, in this case, “Development”, and click “Create branch”. (make sure to have the checkout locally option checked).
 4. And finally, run these commands in your local repo.
    ```
    git fetch origin
-   git checkout B-demo-issue
+   git checkout 1-demo-issue
    ```				
 
 ### 4. Commit and Push Changes
 - Commit your changes with a clear and descriptive commit message.
 - Push your branch to the remote repository:
  ```
-  git push origin B-[issue_title]
+  git push origin [issue_number]-[issue_title]
  ```
 **Tip:** Commit every change for better history readability.
 
@@ -72,7 +72,7 @@ Then, create a new branch as outlined in Step 3.
     },
     "[javascriptreact]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
    "todo-tree.general.showActivityBarBadge": true,
 	"todo-tree.general.tags": [
 		"NOTE",
