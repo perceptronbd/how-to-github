@@ -1,4 +1,4 @@
-![how-to-guide](https://github.com/perceptronbd/how-to-guide/assets/53243993/3d3e08ad-b0e1-47b6-85ad-9eed580f92dd)
+![how-to-guide](https://github.com/user-attachments/assets/081e9d71-b1b8-46cd-8de8-b98d3c4e4402)
 
 # GitHub Collaboration Guidelines
 
